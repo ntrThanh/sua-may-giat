@@ -1,0 +1,46 @@
+/* for tablet and low pc resolution */
+
+@media (min-width: 740px) {
+    .top__container-lable {
+        display: block ;
+    }
+
+    .logo-img {
+        width: auto;
+        height: 70px;
+    }
+
+    .top__container-lable {
+        font-size: 20px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .logo-img {
+        width: auto;
+        height: 100px;
+    }
+
+    .top__container-lable {
+        font-size: 20px;
+    }
+
+    .top__container-lable {
+        display: block ;
+    }
+
+    .top__menu-mobile {
+        display: none;   
+    }
+
+    .top__contact-us {
+        display: block;
+    }
+
+    .header__bottom {
+        display: block;
+    }
+    .phone {
+        margin: 30px;
+    }
+}
