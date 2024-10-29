@@ -57,6 +57,7 @@ body {
 .container__main-paragraph h1  {
     margin-top: 10px;
     color: var(--theme-collor);
+    text-transform: uppercase;
 }
 
 .container__main-paragraph h2  {

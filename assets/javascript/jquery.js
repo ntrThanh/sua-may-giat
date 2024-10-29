@@ -67,7 +67,7 @@ window.addEventListener("scroll", function () {
   const viewportHeight = window.innerHeight;
   const scrollPosition = window.scrollY || window.pageYOffset;
 
-  if (scrollPosition >= viewportHeight) {
+  if (scrollPosition >= viewportHeight / 3) {
     phoneButton.classList.add("show");
   } else {
     phoneButton.classList.remove("show");
@@ -82,7 +82,7 @@ window.addEventListener("scroll", function () {
   const viewportHeight = window.innerHeight;
   const scrollPosition = window.scrollY || window.pageYOffset;
 
-  if (scrollPosition >= viewportHeight) {
+  if (scrollPosition >= viewportHeight / 3) {
     phoneButton.classList.add("show");
   } else {
     phoneButton.classList.remove("show");
