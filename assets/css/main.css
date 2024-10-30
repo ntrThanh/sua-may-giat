@@ -7,7 +7,8 @@
 .header {
     background-color: var(--white-color);
     z-index: 2;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;}
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
 
 .logo-img {
     width: auto;
@@ -56,7 +57,7 @@
     background-color: var(--white-color);
     border: 2px solid var(--theme-collor);
     animation: fadeIn ease-in 0.1s;
-    
+
 }
 
 .top__contact-button:hover a {
@@ -95,6 +96,7 @@
     cursor: pointer;
     color: #ccc;
 }
+
 .header__bottom-item:hover .bottom-item-link {
     color: #ccc;
 }
@@ -194,11 +196,11 @@
 }
 
 .nav__item-more {
-    display: none;   
+    display: none;
 }
 
 .nav__item-more-item {
-    padding: 15px 0 15px 30px ;
+    padding: 15px 0 15px 30px;
 }
 
 .nav__item-more-item:hover {
@@ -234,7 +236,7 @@
 }
 
 .container__center {
-    height: inherit ;
+    height: inherit;
     z-index: 1;
     position: absolute;
     color: var(--white-color);
@@ -246,14 +248,14 @@
 .center__lable {
     letter-spacing: 1px;
     font-size: 1.8rem;
-    margin-bottom: 50px;    
+    margin-bottom: 50px;
     margin-top: 10rem;
     padding: 0 10px;
     text-transform: uppercase;
 }
 
 .center__paragraph {
-    margin-top:  -20px;
+    margin-top: -20px;
     padding: 0 10px;
     font-size: 20px;
 }
@@ -264,14 +266,14 @@
     font-size: 20px;
     font-weight: 600;
     width: 10em;
-    color: var(--theme-collor);   
+    color: var(--theme-collor);
 }
 
 .container__center-button a {
     color: var(--theme-collor);
 }
 
-.container__center-button:hover a{
+.container__center-button:hover a {
     color: var(--white-color);
 }
 
@@ -422,7 +424,7 @@ p {
     box-sizing: border-box;
 }
 
-.information__caption{
+.information__caption {
     font-weight: 500;
     width: 100%;
     min-height: 100px;
@@ -430,7 +432,8 @@ p {
     margin-bottom: .1em;
     padding: 20px 5px;
     display: -webkit-box;
-    -webkit-line-clamp: 2; /* Giới hạn 2 dòng */
+    -webkit-line-clamp: 2;
+    /* Giới hạn 2 dòng */
     -webkit-box-orient: vertical;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -450,7 +453,7 @@ p {
     height: auto;
 }
 
-.infomation__button{
+.infomation__button {
     color: var(--theme-collor);
     padding: 5px 5px;
 }
@@ -478,7 +481,7 @@ p {
 
 .footer {
     color: var(--white-color);
-    background-color: #0b2535; 
+    background-color: #0b2535;
 }
 
 .footer__container-item {
@@ -490,12 +493,13 @@ p {
 .footer__item-container {
     margin-top: 30px;
 }
+
 .footer__item-img {
-    align-items:  center;
+    align-items: center;
     margin-right: 1rem;
 }
 
-.footer__item-paragraph{
+.footer__item-paragraph {
     align-items: center;
 }
 
@@ -526,9 +530,9 @@ p {
 
 
 .copy__right {
-    padding: 10px 0;
+    padding: 5px 0;
     color: var(--white-color);
-    background: #3f3f3f;
+    background: #2a2a2b;
 }
 
 .copy__right a {
@@ -567,21 +571,54 @@ p {
     opacity: 0;
     transition: opacity 0.5s;
     z-index: 1000;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
 }
+
+
 
 .phone.show {
     opacity: 1;
 }
 
+
 .hidden {
     display: none;
+}
+
+.phone i {
+    -webkit-animation: calltrap_spin 3s infinite linear;
+    -moz-animation: calltrap_spin 3s infinite linear;
+    -o-animation: calltrap_spin 3s infinite linear;
+    animation: calltrap_spin 3s infinite linear
+}
+
+.phone .zalo i {
+    -webkit-animation: calltrap_spin 3s infinite linear;
+    -moz-animation: calltrap_spin 3s infinite linear;
+    -o-animation: calltrap_spin 3s infinite linear;
+    animation: calltrap_spin 3s infinite linear
 }
 
 .phone {
     /* Các thuộc tính trước đó */
     transform: translateY(20px);
     transition: opacity 0.5s, transform 0.5s;
+    -webkit-animation: devvn_zoom 1.5s infinite linear;
+    -moz-animation: devvn_zoom 1.5s infinite linear;
+    -o-animation: devvn_zoom 1.5s infinite linear;
+    animation: devvn_zoom 1.5s infinite linear;
+    box-shadow: 0 0 0 0 #9befba;
+}
+
+.zalo {
+    font-size: 3rem;
+    background-color: rgb(116, 196, 243);
+    right: 20px;
+    -webkit-animation: devvn_zoom 1.5s infinite linear;
+    -moz-animation: devvn_zoom 1.5s infinite linear;
+    -o-animation: devvn_zoom 1.5s infinite linear;
+    animation: devvn_zoom 1.5s infinite linear;
+    box-shadow: 0 0 0 0 #1cb2ed;
 }
 
 .phone.show {
@@ -589,11 +626,7 @@ p {
     transform: translateY(0);
 }
 
-.zalo {
-    font-size: 3rem;
-    background-color: white;
-    right: 20px;
-}
+
 
 .container__five-half-img {
     width: 100%;
@@ -620,3 +653,277 @@ p {
 .container__preview-header {
     text-transform: uppercase;
 }
+
+
+@-webkit-keyframes devvn_zoom {
+    70% {
+        box-shadow: 0 0 0 15px transparent
+    }
+
+    100% {
+        box-shadow: 0 0 0 0 transparent
+    }
+}
+
+@keyframes devvn_zoom {
+    70% {
+        box-shadow: 0 0 0 15px transparent
+    }
+
+    100% {
+        box-shadow: 0 0 0 0 transparent
+    }
+}
+
+@-webkit-keyframes calltrap_spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg)
+    }
+
+    30% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg)
+    }
+
+    33% {
+        -webkit-transform: rotate(-10deg);
+        transform: rotate(-10deg)
+    }
+
+    36% {
+        -webkit-transform: rotate(10deg);
+        transform: rotate(10deg)
+    }
+
+    39% {
+        -webkit-transform: rotate(-10deg);
+        transform: rotate(-10deg)
+    }
+
+    42% {
+        -webkit-transform: rotate(10deg);
+        transform: rotate(10deg)
+    }
+
+    45% {
+        -webkit-transform: rotate(-10deg);
+        transform: rotate(-10deg)
+    }
+
+    48% {
+        -webkit-transform: rotate(10deg);
+        transform: rotate(10deg);
+        opacity: 1
+    }
+
+    51% {
+        -webkit-transform: rotate(-10deg);
+        transform: rotate(-10deg)
+    }
+
+    54% {
+        -webkit-transform: rotate(10deg);
+        transform: rotate(10deg)
+    }
+
+    57% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg)
+    }
+}
+
+@-moz-keyframes calltrap_spin {
+    0% {
+        -moz-transform: rotate(0deg);
+        transform: rotate(0deg)
+    }
+
+    30% {
+        -moz-transform: rotate(0deg);
+        transform: rotate(0deg)
+    }
+
+    33% {
+        -moz-transform: rotate(-10deg);
+        transform: rotate(-10deg)
+    }
+
+    36% {
+        -moz-transform: rotate(10deg);
+        transform: rotate(10deg)
+    }
+
+    39% {
+        -moz-transform: rotate(-10deg);
+        transform: rotate(-10deg)
+    }
+
+    42% {
+        -moz-transform: rotate(10deg);
+        transform: rotate(10deg)
+    }
+
+    45% {
+        -moz-transform: rotate(-10deg);
+        transform: rotate(-10deg)
+    }
+
+    48% {
+        -moz-transform: rotate(10deg);
+        transform: rotate(10deg);
+        opacity: 1
+    }
+
+    51% {
+        -moz-transform: rotate(-10deg);
+        transform: rotate(-10deg)
+    }
+
+    54% {
+        -moz-transform: rotate(10deg);
+        transform: rotate(10deg)
+    }
+
+    57% {
+        -moz-transform: rotate(0deg);
+        transform: rotate(0deg)
+    }
+}
+
+@-o-keyframes calltrap_spin {
+    0% {
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg)
+    }
+
+    30% {
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg)
+    }
+
+    33% {
+        -o-transform: rotate(-10deg);
+        transform: rotate(-10deg)
+    }
+
+    36% {
+        -o-transform: rotate(10deg);
+        transform: rotate(10deg)
+    }
+
+    39% {
+        -o-transform: rotate(-10deg);
+        transform: rotate(-10deg)
+    }
+
+    42% {
+        -o-transform: rotate(10deg);
+        transform: rotate(10deg)
+    }
+
+    45% {
+        -o-transform: rotate(-10deg);
+        transform: rotate(-10deg)
+    }
+
+    48% {
+        -o-transform: rotate(10deg);
+        transform: rotate(10deg);
+        opacity: 1
+    }
+
+    51% {
+        -o-transform: rotate(-10deg);
+        transform: rotate(-10deg)
+    }
+
+    54% {
+        -o-transform: rotate(10deg);
+        transform: rotate(10deg)
+    }
+
+    57% {
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg)
+    }
+}
+
+@keyframes calltrap_spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg)
+    }
+
+    30% {
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg)
+    }
+
+    33% {
+        -webkit-transform: rotate(-10deg);
+        -moz-transform: rotate(-10deg);
+        -o-transform: rotate(-10deg);
+        transform: rotate(-10deg)
+    }
+
+    36% {
+        -webkit-transform: rotate(10deg);
+        -moz-transform: rotate(10deg);
+        -o-transform: rotate(10deg);
+        transform: rotate(10deg)
+    }
+
+    39% {
+        -webkit-transform: rotate(-10deg);
+        -moz-transform: rotate(-10deg);
+        -o-transform: rotate(-10deg);
+        transform: rotate(-10deg)
+    }
+
+    42% {
+        -webkit-transform: rotate(10deg);
+        -moz-transform: rotate(10deg);
+        -o-transform: rotate(10deg);
+        transform: rotate(10deg)
+    }
+
+    45% {
+        -webkit-transform: rotate(-10deg);
+        -moz-transform: rotate(-10deg);
+        -o-transform: rotate(-10deg);
+        transform: rotate(-10deg)
+    }
+
+    48% {
+        -webkit-transform: rotate(10deg);
+        -moz-transform: rotate(10deg);
+        -o-transform: rotate(10deg);
+        transform: rotate(10deg);
+        opacity: 1
+    }
+
+    51% {
+        -webkit-transform: rotate(-10deg);
+        -moz-transform: rotate(-10deg);
+        -o-transform: rotate(-10deg);
+        transform: rotate(-10deg)
+    }
+
+    54% {
+        -webkit-transform: rotate(10deg);
+        -moz-transform: rotate(10deg);
+        -o-transform: rotate(10deg);
+        transform: rotate(10deg)
+    }
+
+    57% {
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg)
+    }
